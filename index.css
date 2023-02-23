@@ -1,31 +1,17 @@
-html,
-body {
+* {
   padding: 0px;
   margin: 0px;
 }
 
-.me {
+body {
   background-color: #f5f2fc;
+}
+
+.me {
   height: 700px;
   font-size: 20px;
   font-family: 'Playfair display', sans-serif;
   margin-bottom: -30px;
-}
-
-nav {
-  display: flex;
-  justify-content: start;
-}
-
-ul {
-  display: flex;
-  justify-content: space-around;
-  list-style-type: none;
-  width: 250px;
-  margin-right: 100px;
-  margin-top: 40px;
-  position: fixed;
-  left: 0;
 }
 
 .main {
@@ -41,6 +27,9 @@ h1 {
   margin-bottom: 10px;
 }
 
+.about-me {
+  margin-bottom: 20px;
+}
 .social-area {
   display: flex;
   justify-content: end;
