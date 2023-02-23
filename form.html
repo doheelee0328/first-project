@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="form.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+           <!--action="mailto:dojuhee2015@gmail.com" -->
+  <body>
+        <center>
+            <section id="contact-details">
+              <div class="contact">
+              <h1>Contact Details</h1>
+              <form 
+              name="myForm"
+                method="post"
+                enctype="text/plain"
+              >
+                <label>Name</label>
+                <input type="text" name="inputbox" placeholder="Firstname" required minlength="5"
+                maxlength="10" value=""/>
+                <input type="text" name="LastName" placeholder="Lastname" required/>
+                <br />
+                <br/>
+                <label>Email</label>
+                <input type="email" name="Email" required />
+                <br />
+                <br />
+                <label>When is the most convienent time for me to contact you?</label>
+                <input type="date" name="Date" reuqired />
+                <br />
+                <br />
+                <label>Would you like to sign up for any dancing lessons?</label>
+                <input type="checkbox" name="Dancinglessons?" required />
+                <br />
+                <br />
+                <label>Message</label>
+                <br />
+                <textarea name="Message" rows="10" cols="30" required minlength="10" maxlength="100"></textarea>
+                <br>
+                <label class="max">Max 100 characters</label>
+                <br />
+                <br>
+                <input type="submit" />
+      
+              </div>
+              </form>
+            </section>
+        </center>
+
+    <script src="app.js"></script>
+  </body>
+</html>
