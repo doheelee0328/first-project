@@ -11,23 +11,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My website</title>
+    <title>My hobby</title>
   </head>
   <body>
-    <div class="me" id="about-me">
-  
-      <div class="main">
+    <section class="me" id="about-me">
+    <header>
+      <nav>
+        <ul class="navbar">
+          <li>Home</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </header>
+      <section class="main">
         <h1>Hello!</h1>
-        <p  class="about-me">Would you like to know a bit about me?</p>
-        <a href="form.html"> <button>Contact Me</button> </a>
-        <button id="button">Welcome</button>
-        <p id="message"></p>
+        <p  class="about-me">Would you like to know about my hobbies?</p>
+      <a href="form.html"> <button>Contact me</button></a>
+     
+       
         <div class="about-me">
-          <p class="information">
-            My name is Dohee Lee. I have just graduated from Coventry University
-            in Aviation Management, however, I would love to pursue a career in
-            tech! <span>Hopefully, i will become a software enginner!</span> <span></span>If you would like to find out more about me please visit my social media websites! </span>
-          </p>
+          <div class="information">
+            <h2 class="list">My hobbies</h2>
+            <ul class="hobbies">
+              <li class="hobby">Dancing</li>
+              <li class="hobby">coding</li>
+              </ul>
+          </div>
+          <button id="button" class="question1">Tell me about your hobbies</button>
+          <p id="message"></p>
           <div class="image">
             <img
               src="./images/image1.jpeg"
@@ -36,11 +47,13 @@
             <div class="image-overlay">
               <img
                 class="yoona"
-                src="./images/image2.jpeg"
+                src="./images/image2.png"
                 alt="another-me"
               />
             </div>
           </div>
+          
+
         </div>
         <div class="social-area">
           <div class="social">
@@ -82,25 +95,53 @@
             </a>
           </div>
         </div>
+      </section class="FAQ">
+      <div class="accordion">
+        <h2 class="accordian-title">Frequently Asked Questions about Dancing & Coding</h2>
+        <div class="content-container">
+          <div class="question">How do I dance as a beginner?</div>
+          <div class="answer">
+            For beginner dancers we start by introducing the foundation dances
+            gradually until the student gets familiar with them and once
+            comfortable, we move forward with the specialty dances.
+          </div>
+        </div>
+        <div class="content-container">
+          <div class="question">Can I lose weight by dancing?</div>
+          <div class="answer">
+            It is possible to be able to lose weight while dancing! Given the fact
+            that you are going to be in constant movement and your cardio is going
+            to be boosted regularly, the blood flow throughout your body is going
+            to be increased, therefore your metabolism will accelerate as opposed
+            to when your body is not moving. Ultimately you will start to shed
+            pounds as you continue to dance gradually!
+          </div>
+        </div>
+        <div class="content-container">
+          <div class="question">
+            Steps to Becoming a Coder
+          </div>
+          <div class="answer">
+            One of the first steps you can take when planning your career change is to take advantage of free online coding resources such as youtube, udemy or freeCodeCamp. Countless online sources provide valuable career advice, host opportunities for project-based learning.
+          </div>
+        </div>
+        <div class="content-container">
+          <div class="question">Why should I learn to code?</div>
+          <div class="answer">
+           Coding skills can boost your career. 
+            That's because an ability to code can take your career to the next level. Consider a business analyst who 
+            learns how to code. They can open new opportunities, including in business analytics and data science, with coding skills. 
+            Or coding can help them stand out at their next annual review.
+            Learning to code can mean qualifying for promotions or specialized roles. 
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="contact" id="contact-d">
-      <div class="phone">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="50"
-          height="50"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M7 0c-1.105 0-2 .896-2 2v18.678c-.001 2.213 3.503 3.322 7.005 3.322 3.498 0 6.995-1.106 6.995-3.322v-18.678c0-1.104-.895-2-2-2h-10zm5 22c-.552 0-1-.448-1-1s.448-1 1-1 1 .448 1 1-.448 1-1 1zm5-4h-10v-14h10v14z"
-          />
-        </svg>
-      </div>
-      <div class="phone-number">
-        <div class="contact-me">Call</div>
-        <div class="contact-me">+4459206820582</div>
-      </div>
+      <section>
+        
+      </section>
+    <section class="contact" id="contact-d">
+ 
+    
       <div class="email">
         <div>
           <svg
@@ -132,12 +173,9 @@
             />
           </svg>
           </a>
-          </div>
           <p class="click-form"> Fill in your form here</p>
         </div>
-      </div>
-
-    </div>
+    </section>
     <script src="app.js"></script>
   </body>
 </html>

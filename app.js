@@ -1,8 +1,15 @@
 const button = document.getElementById('button')
 const message = document.getElementById('message')
-const newMessage = document.getElementById('new-messagee')
+const acc = document.getElementsByClassName('content-container')
 
 button.addEventListener('click', function () {
-  const name = prompt('What is your name?')
-  message.innerText = `Welcome to my page ${name}!`
+  const hobby = prompt('What is you hobby?')
+  message.innerText = `My hobby is ${hobby}!`
 })
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener('click', function () {
+    this.classList.toggle('active')
+    console.log(this.classList)
+  })
+}

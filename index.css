@@ -1,6 +1,7 @@
 * {
   padding: 0px;
   margin: 0px;
+  overflow: 'hidden';
 }
 
 body {
@@ -14,11 +15,24 @@ body {
   margin-bottom: -30px;
 }
 
+nav {
+  background-color: #eee8fa;
+  height: 100px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding-top: 40px;
+}
+
 .main {
   height: 100%;
   margin-top: 80px;
   margin-left: 30px;
   align-items: center;
+  overflow: hidden;
 }
 
 h1 {
@@ -76,58 +90,51 @@ button:active {
 img {
   height: 400px;
   border-radius: 400px;
-  position: relative;
-  top: -200px;
-  margin-right: 100px;
+  margin-left: 450px;
+  position: absolute;
+  top: 200px;
+
   cursor: pointer;
 }
 
-.yoona {
-  width: 400px;
-}
-
 .image-overlay {
-  position: relative;
-  top: -405px;
+  position: absolute;
+  top: 1px;
   opacity: 0;
   transition: opacity 0.25s;
   object-fit: cover;
-  width: 100%;
-  height: 100%;
 }
 
 .image-overlay:hover {
   opacity: 1;
 }
 
-.information {
-  padding: 10px;
-  margin-left: 30px;
-  font-style: italic;
-  margin-top: 20px;
-}
-
 .contact {
   background-color: #eee8fa;
   height: 150px;
   display: flex;
+
+  overflow: hidden;
 }
 
-.phone {
-  margin-left: 40px;
-  position: relative;
-  bottom: -40px;
+.hobbies {
+  list-style-type: disc;
 }
 
-.phone-number {
-  display: flex;
-  flex-direction: column;
+.question1 {
+  position: absolute;
+  top: 600px;
 }
-.contact-me {
-  position: relative;
-  bottom: -50px;
-  display: flex;
-  flex-direction: column;
+
+.information {
+  margin-left: 50px;
+  margin-top: 20px;
+}
+.list {
+  margin-bottom: 20px;
+}
+.more-hobbies {
+  margin-top: 100px;
 }
 
 .email {
@@ -145,23 +152,10 @@ img {
 }
 
 .ways-to-contact {
-  margin-left: 70px;
   display: flex;
   justify-content: space-around;
-  width: 3px;
-  position: relative;
-  bottom: -40px;
-}
-
-.click {
-  position: relative;
-  top: -3px;
-}
-
-.click-form {
-  font-size: 15px;
-  margin-top: 50px;
-  margin-left: 30px;
+  margin-left: 100px;
+  margin-top: 40px;
 }
 
 a {
@@ -174,11 +168,66 @@ span {
 }
 
 #message {
-  font-size: 20px;
+  font-size: 40px;
   font-style: italic;
+  position: absolute;
+  top: 660px;
 }
 
-#new-message {
+.accordion {
+  width: 65%;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 30px;
+  margin-left: 300px;
+  margin-top: -100px;
+  margin-bottom: 100px;
+}
+
+h2 {
+  margin: 0;
+  text-align: center;
+  margin: 20px 0px 20px 0;
+}
+
+.accordion .content-container .question {
   font-size: 20px;
-  font-style: italic;
+  padding: 18px 0px;
+  cursor: pointer;
+  border-bottom: 1px solid black;
+}
+
+.accordion .content-container .question:after {
+  content: '+';
+  position: absolute;
+  left: 1000px;
+}
+
+.question:hover {
+  color: #f7e4d2;
+}
+
+.accordion .content-container .answer {
+  padding-top: 15px;
+  font-size: 20px;
+  line-height: 1.5;
+  width: 100%;
+
+  height: 0px;
+  overflow: hidden;
+  transition: 1s;
+}
+
+.accordion .content-container.active .question {
+  font-size: 18px;
+  transition: 2s;
+}
+
+.accordion .content-container.active .question::after {
+  content: '-';
+  transition: 5s;
+}
+
+.accordion .content-container.active .answer {
+  height: 150px;
 }
