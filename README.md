@@ -1,20 +1,19 @@
 # My Hobbies
 
-# Description
+**Description**
 
-This is a simple hobby page showcasing some of my favorite hobbies. It contains buttons that will allow to access to a contact page where another button 
-allows the users to type in their favourite hobbies. 
+This is a simple hobby page showcasing some of my favorite hobbies.  
 
 In addition, it includes 
 
-#Technologies Used
+**Technologies Used**
 
 - HTML
 - CSS
 - JavaScript
 
 
-#How I created it:
+**How I created it:**
 
 The project was created using conmbination of HTML, CSS and javascript. 
 
