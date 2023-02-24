@@ -4,7 +4,6 @@
 
 This is a simple hobby page showcasing some of my favorite hobbies.  
 
-In addition, it includes 
 
 **Technologies Used**
 
